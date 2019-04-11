@@ -348,13 +348,14 @@ li {
 /*****************COMPETENCES.html***************/
 .python-image, .mysql-image, .html-image, .css-image, 
 .uml-image, .js-image, .ppx-image, .excel-image, 
-.pycharm-image, .sublim-image, .gimp-image  {  
+.pycharm-image, .sublim-image {  
 	background-size: cover;
 	width: 2cm;
 	height: 2cm;
 }
 
 .gimp-image  {  
+	background-size: cover;
 	width: 3cm;
 	height: 3cm;
 }
