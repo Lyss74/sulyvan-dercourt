@@ -30,6 +30,7 @@ body {
 
 .quality, .visit-card-in {  
 	font-size: 15pt;
+	font-family: sans-serif;
 	color: #A4A4A4;
 	margin-bottom: 1.5em;
 }
@@ -77,7 +78,6 @@ body {
 }
 
 /*Generic pictures size*/
-
 .hunimalis-image, .quasar-image, .contresens-image, 
 .cote-plage-image, .bmb-image, .isatis-image, 
 .bodega-image, .forum-image, .bureau-image { 
@@ -94,6 +94,7 @@ span  {
 	margin-left: 1em;
 	text-decoration: none;
 	font-size: 12.5pt;
+	font-family: sans-serif;
 	text-align: center;
 	color: #BDBDBD;
 }
@@ -149,6 +150,7 @@ h5, h6 { margin: 0em; padding: 0em;}
 .title-1 {
 	text-decoration: none; 
 	font-size: 14pt;
+	font-family: sans-serif;
 	text-align: center;
 	color: #BDBDBD;
 	position: relative;
@@ -194,6 +196,7 @@ footer  {
 
 .title { 
 	font-size: 14pt;
+	font-family: sans-serif;
 	text-align: center;
 	color:#A4A4A4;
 	position: relative;
@@ -219,7 +222,7 @@ footer  {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	height: 27em;
+	height: 35em;
 	width: 50em;
 	margin: auto;
 	padding: auto;
@@ -233,12 +236,14 @@ footer  {
 	border-image: linear-gradient(to right, #181818 ,#A4A4A4);
 	border-image-slice: 1;
 	box-shadow: 6px 6px 6px black;
-	height: 12em;
+	height: 14em;
 	margin: auto;
 }
 
 .party-1-presentation {
 	width: 49em;
+	height: auto;
+	margin-bottom: 0.2%;
 }
 
 .party-2-presentation, .party-3-presentation { 
@@ -253,7 +258,8 @@ footer  {
 .presentation-text { 
 	text-decoration: none;
 	text-align: center; 
-	font-size: 12.5pt; 
+	font-size: 11.5pt; 
+	font-family: sans-serif;
 	color: #A4A4A4;
 	overflow: auto;
 	padding: 3%;
@@ -276,7 +282,8 @@ footer  {
 	box-shadow: 6px 6px 6px black;
 	border-image: linear-gradient(to top, #181818 ,#A4A4A4);
 	border-image-slice: 1;
-	font-size: 12pt;
+	font-size: 11.3pt; 
+	font-family: sans-serif;
 	color: #A4A4A4;
     width: 40em;
 	height: auto;
@@ -297,7 +304,8 @@ footer  {
 p, li {
 	text-decoration: none; 
 	text-align: center; 
-	font-size: 12pt; 
+	font-size: 11.5pt; 
+	font-family: sans-serif;
 	color: #A4A4A4;
 	overflow: auto;
 	text-align: center;
@@ -321,7 +329,8 @@ li {
 
 .project-text { 
 	text-align: left; 
-	font-size: 12pt;
+	font-size: 11.5pt; 
+	font-family: sans-serif;
 	color: #A4A4A4;
     width: 40em;
 	height: auto;
@@ -336,7 +345,8 @@ li {
 	border-image: linear-gradient(to top, rgba(156, 2, 2, 0.541) ,#181818);
 	border-image-slice: 1;
 	text-align: left; 
-	font-size: 12pt;
+	font-size: 11.3pt; 
+	font-family: sans-serif;
 	color: #A4A4A4;
 	width: 40em;
 	height: auto;
@@ -346,19 +356,24 @@ li {
 /*****************PORTFOLIO.html-END*************/
 
 /*****************COMPETENCES.html***************/
-.python-image, .mysql-image, .html-image, .css-image, 
-.uml-image, .js-image, .ppx-image, .excel-image, 
+.python-image, .excel-image, .mysql-image, .gimp-image
+.uml-image, .ppx-image, 
 .pycharm-image, .sublim-image {  
 	background-size: cover;
 	width: 2cm;
 	height: 2cm;
 }
-
-.gimp-image  {  
+.css-image {
 	background-size: cover;
-	width: 3cm;
-	height: 3cm;
+	width: 1.3cm;
 }
+
+.js-image {
+	background-size: cover;
+	width: 1.6cm;
+	height: 1.6cm;
+}
+
 /*****************COMPETENCES.html-END***********/
 
 /*****************IN_CONTACT.html***************/
