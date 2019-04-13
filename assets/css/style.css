@@ -251,6 +251,7 @@ footer  {
 
 .party-2-presentation, .party-3-presentation { 
 	width: 24em;
+	height: 12em;
 }
 
 .party-3-presentation {
@@ -265,7 +266,7 @@ footer  {
 	font-family: sans-serif;
 	color: #A4A4A4;
 	overflow: auto;
-	padding: 3%;
+	padding: 4%;
 }
 
 .oc {  
@@ -334,9 +335,9 @@ li {
 
 .oc-2 {
 	background-size: cover;
-	width: 1.5cm;
-	height: 1.4cm;
-	margin-left: 42.7%;
+	width: 6cm;
+	height: 3.5cm;
+	margin-left: 29%;
 } 
 
 .title-oc {
