@@ -44,38 +44,38 @@ body {
 	width: 100em;
 }
 
-.adjust { margin-left: 5em; padding: 0em;}
+.adjust {
+	margin-left: 5em; 
+		padding: 0em;
+}
 
-.tel, .drive, .gmail {
+/*Generic pictures*/
+.tel, .drive, 
+.gmail, .accueil {
 	background-size: cover;
 	float: left;
 	clear: right; 
 	width: 1cm;
 	height: 1cm;
+	animation: change_width_back 0.5s forwards;
 }
 
-/*Generic pictures*/
+.linkedin:hover, .gmail:hover, .drive:hover, 
+.tel:hover, .cvcertif:hover, .accueil:hover {
+	box-shadow: 1px 1px #860f0680, 2px 2px #860f0680, 3px 3px #860f0680;
+	opacity: 0.5;
+	transform: translateX(-3px);
+	-webkit-transform: translateX(-3px);
+	animation: change_width 0.5s forwards;
+}
+
 .accueil {  
-	background-size: cover;
 	width: 1.3cm;
 	height: 1.3cm;
 }
 
-.photo {
-	position: absolute;
-	top: 10%;
-	right: 10%;
-	width: 3cm;
-	box-shadow: 7px 7px 7px black;
-	border-radius: 60px 60px 60px 60px;
-	opacity: 0.8;
-}
-
-.linkedin:hover, .gmail:hover, .drive:hover, .tel:hover, .cvcertif:hover {
-	box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
-	opacity: 0.5;
-	transform: translateX(-3px);
-	-webkit-transform: translateX(-3px);
+.accueil:hover {  
+	box-shadow: 1px 1px #505ef771, 2px 2px #505ef771, 3px 3px #505ef771;
 }
 
 /*Generic pictures size*/
@@ -89,6 +89,16 @@ body {
 	height: 60px;
 	width: 350px;
 	margin-bottom: 1%;
+}
+
+.photo {
+	position: absolute;
+	top: 10%;
+	right: 10%;
+	width: 3cm;
+	box-shadow: 7px 7px 7px black;
+	border-radius: 60px 60px 60px 60px;
+	opacity: 0.8;
 }
 
 span  {
@@ -185,6 +195,22 @@ footer  {
 	border-top: 2.5 double transparent;
 }
 
+/*******KEYFRAME ANIMATION ICON********/
+@keyframes change_width {
+	0% {
+	   transform: rotate(0deg);
+   }
+   100% {
+	   transform: rotate(45deg);
+   }}
+@keyframes change_width_back {
+   0% {
+	   transform: rotate(45deg);
+   }
+   100% {
+	   transform: rotate(0deg);
+   }}
+/*******KEYFRAME ANIMATION ICON-END*****/
 /*****************STRUCTURE-END*******************/
 
 /*****************IN_INDEX.html*******************/
@@ -318,7 +344,7 @@ p, li {
 
 li {
 	text-align: left;
-	font-size: 12pt; 
+	font-size: 10.5pt; 
 }
 
 	/*****************EXPERIENCE.html-END*************/
@@ -344,7 +370,6 @@ li {
 	text-decoration: none;
 	font-size: 12pt;
 	color: #A4A4A4;
-
 	font-family: sans-serif;
 	margin-left: 15%;
 }
@@ -390,37 +415,72 @@ li {
 /*****************PORTFOLIO.html-END*************/
 
 /*****************COMPETENCES.html***************/
-.python-image, .sublim-image, .pycharm-image,
- .js-image {  
+.python-image, .sublim-image, 
+.pycharm-image, .js-image,
+.gimp-image, .uml-image,
+.css-image, .html-image, 
+.excel-image, .ppx-image {  
 	background-size: cover;
-	width: 1.5cm;
-	height: 1.5cm;
+	height: 4.5em;
+	width: 4.5em;
+	padding-right: 2.5em;
 }
 
-.css-image, .html-image, .excel-image, .ppx-image   {
-	background-size: cover;
-	width: 1.2cm;
-	height: 1.3cm;
-}
-
-.html-image, .uml-image {
-	background-size: cover;
-	width: 1.3cm;
-	height: 1.3cm;
-}
-
-.gimp-image {
-	background-size: cover;
-	width: 1.5cm;
-	height: 1.5cm;
+.python-image:hover, .sublim-image:hover, 
+.pycharm-image:hover, .js-image:hover,
+.gimp-image:hover, .uml-image:hover,
+.css-image:hover, .html-image:hover, 
+.excel-image:hover, .ppx-image:hover, 
+.mysql-image:hover {  
+	box-shadow: 1px 1px #A4A4A4, 2px 2px #A4A4A4, 3px 3px #A4A4A4;
+	transform: translateX(-3px);
 }
 
 .mysql-image {
 	background-size: cover;
-	width: 1.5cm;
-	height: 1.3cm;
+	height: 5em;
+	width: 5.8em;
+	padding-right: 1.2em;
 }
 
+.css-image {
+	width: 3.9em;
+
+}
+.stars {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-left: 15%;
+	padding-bottom: 5%;
+}
+.stars-image {
+	background-size: cover;
+	width: 1cm;
+	height: 1cm;
+	animation: change_width_back 0.5s forwards;
+}
+
+.stars-image:hover {
+	animation: change_width 0.5s forwards;
+}
+.competence {
+	background-color: #70708338;
+	border: 2.5px double #101012;
+	border-bottom: 2.5px double transparent;
+	box-shadow: 6px 6px 6px black;
+	border-image: linear-gradient(to bottom, #181818 ,#A4A4A4);
+	border-image-slice: 1;
+	text-align: center;
+	font-size: 12.5pt;
+	font-family: sans-serif;
+	color: #A4A4A4;
+	margin: 2em;
+}
+h3 {	
+	margin-bottom: 0%; padding-bottom: 0%;
+
+}
 /*****************COMPETENCES.html-END***********/
 
 /*****************IN_CONTACT.html***************/
