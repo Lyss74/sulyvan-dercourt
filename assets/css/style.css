@@ -210,6 +210,7 @@ footer  {
    100% {
 	   transform: rotate(0deg);
    }}
+   
 /*******KEYFRAME ANIMATION ICON-END*****/
 /*****************STRUCTURE-END*******************/
 
@@ -328,7 +329,7 @@ footer  {
 }
 
 .presentation-list {
-	border-image: linear-gradient(to right, rgba(156, 2, 2, 0.541) ,#A4A4A4);
+	border-image: linear-gradient(to right, #9C0202 ,#A4A4A4);
 	border-image-slice: 1;
 }
 
@@ -389,7 +390,7 @@ li {
 	border: 2.5px double #101012;
 	border-bottom: 2.5px double transparent;
 	box-shadow: 6px 6px 6px black;
-	border-image: linear-gradient(to top, rgba(156, 2, 2, 0.541) ,#181818);
+	border-image: linear-gradient(to top, #9C0202 ,#181818);
 	border-image-slice: 1;
 	text-align: left; 
 	font-size: 11.3pt; 
@@ -402,7 +403,7 @@ li {
 }
 
 .presentation-a1 {
-	border-image: linear-gradient(to top, rgba(156, 2, 2, 0.541) ,#A4A4A4);
+	border-image: linear-gradient(to top, #9C0202 ,#A4A4A4);
 	border-image-slice: 1;
 	font-size: 11.3pt; 
 	font-family: sans-serif;
@@ -415,25 +416,20 @@ li {
 /*****************PORTFOLIO.html-END*************/
 
 /*****************COMPETENCES.html***************/
-.python-image, .sublim-image, 
-.pycharm-image, .js-image,
-.gimp-image, .uml-image,
-.css-image, .html-image, 
-.excel-image, .ppx-image {  
+.python-image, .js-image,.uml-image,
+.css-image, .html-image { 
 	background-size: cover;
 	height: 4.5em;
 	width: 4.5em;
-	padding-right: 2.5em;
+	padding-right: 2.4em;
 }
 
-.python-image:hover, .sublim-image:hover, 
-.pycharm-image:hover, .js-image:hover,
-.gimp-image:hover, .uml-image:hover,
-.css-image:hover, .html-image:hover, 
-.excel-image:hover, .ppx-image:hover, 
-.mysql-image:hover {  
-	box-shadow: 1px 1px #A4A4A4, 2px 2px #A4A4A4, 3px 3px #A4A4A4;
-	transform: translateX(-3px);
+.excel-image, .ppx-image,
+.gimp-image, .pycharm-image, 
+.sublim-image, .vs-image {
+	background-size: cover;
+	height: 4.5em;
+	width: 4.5em;
 }
 
 .mysql-image {
@@ -447,6 +443,7 @@ li {
 	width: 3.9em;
 
 }
+
 .stars {
 	display: flex;
 	flex-direction: row;
@@ -454,6 +451,7 @@ li {
 	padding-left: 15%;
 	padding-bottom: 5%;
 }
+
 .stars-image {
 	background-size: cover;
 	width: 1cm;
@@ -464,6 +462,7 @@ li {
 .stars-image:hover {
 	animation: change_width 0.5s forwards;
 }
+
 .competence {
 	background-color: #70708338;
 	border: 2.5px double #101012;
@@ -477,10 +476,36 @@ li {
 	color: #A4A4A4;
 	margin: 2em;
 }
+
 h3 {	
 	margin-bottom: 0%; padding-bottom: 0%;
-
 }
+
+.outils-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.outils {
+	background-color: #70708338;
+	border: 2.5px double #101012;
+	border-bottom: 2.5px double transparent;
+	box-shadow: 6px 6px 6px black;
+	border-image: linear-gradient(to bottom, #A4A4A4,  rgba(161, 9, 9, 0.514));
+	border-image-slice: 1;
+	text-align: center;
+	font-size: 10.5pt;
+	font-family: sans-serif;
+	color: #A4A4A4;
+	height: 10em;
+	width: 12.5em;
+	margin: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+
 /*****************COMPETENCES.html-END***********/
 
 /*****************IN_CONTACT.html***************/
