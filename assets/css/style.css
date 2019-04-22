@@ -5,58 +5,62 @@
 
 /*****Head*****/
 header {
-	margin-right : 1em;	
-	margin-bottom: 4em;
-	border-bottom: 2.5px double #202020;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	border-bottom: 0.156em double #202020;
 	border-image: linear-gradient(to right, #A4A4A4, #9C0202);
 	border-image-slice: 1;
-}
-
-/*****Body*****/
-body {
-	margin: 5em;
-	background: radial-gradient(ellipse farthest-corner,
-	#424242, #252525 30%, #1f1f22  50%, #2E2E2E);
+	margin-right : 1em;	
+	margin-bottom: 3.5em;
 }
 
 .visit-card {
-	width: 27em ;	
+	width: 27em;	
 }
 
 .name {  
-	font-size: 35pt;
+	font-size: 2.91em;
 	color: #BDBDBD;
 }
 
 .quality, .visit-card-in {  
-	font-size: 15pt;
+	font-size: 1.25em;
 	font-family: sans-serif;
 	color: #A4A4A4;
 	margin-bottom: 1.5em;
 }
 
-.separate { 
-	border-bottom: inset 1.5px #9D1212;}
+h5, h6 { margin: 0em; padding: 0em;
+}
 
 .contact { 
 	display: flex; 
 	flex-direction: row;
-	width: 100em;
+	justify-content: space-between;
+	width: 50em;
+	height: 2.5em;
+	margin-top: 9.5em;
+	margin-left: 1em;
 }
 
-.adjust {
-	margin-left: 5em; 
-		padding: 0em;
+span {  
+	background-size: cover;
+	font-size: 12pt;
+	font-family: sans-serif;
+	color: #A4A4A4;
+	text-decoration: none;
+	width: 10em;
+	margin-top: 0.6em;
+	padding-left: 1%;
+	padding-right: 2%
 }
 
 /*Generic pictures*/
 .tel, .drive, 
-.gmail, .accueil {
-	background-size: cover;
-	float: left;
-	clear: right; 
-	width: 1cm;
-	height: 1cm;
+.gmail, .accueil { 
+	width: 2.50em;
+	height: 2.50em;
 	animation: change_width_back 0.5s forwards;
 }
 
@@ -64,9 +68,31 @@ body {
 .tel:hover, .cvcertif:hover, .accueil:hover {
 	box-shadow: 1px 1px #860f0680, 2px 2px #860f0680, 3px 3px #860f0680;
 	opacity: 0.5;
-	transform: translateX(-3px);
-	-webkit-transform: translateX(-3px);
+	transform: translateX(-0.18em);
 	animation: change_width 0.5s forwards;
+}
+
+.photo {
+	top: 10%;
+	right: 10%;
+	width: 3cm;
+	box-shadow: 7px 7px 7px black;
+	border-radius: 60px 60px 60px 60px;
+	opacity: 0.8;
+}
+
+a {text-decoration: none;
+}
+
+.separate { 
+	border-bottom: inset 0.10em #9D1212;
+}
+
+/*****Body*****/
+body {
+	margin: 5em;
+	background: radial-gradient(ellipse farthest-corner,
+	#424242, #252525 30%, #1f1f22  50%, #2E2E2E);
 }
 
 .accueil {  
@@ -78,43 +104,7 @@ body {
 	box-shadow: 1px 1px #505ef771, 2px 2px #505ef771, 3px 3px #505ef771;
 }
 
-/*Generic pictures size*/
-.hunimalis-image, .quasar-image, .contresens-image, 
-.cote-plage-image, .bmb-image, .isatis-image, 
-.bodega-image, .forum-image, .bureau-image { 
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	border: outset 2px #b2796e;
-	height: 60px;
-	width: 350px;
-	margin-bottom: 1%;
-}
-
-.photo {
-	position: absolute;
-	top: 10%;
-	right: 10%;
-	width: 3cm;
-	box-shadow: 7px 7px 7px black;
-	border-radius: 60px 60px 60px 60px;
-	opacity: 0.8;
-}
-
-span  {
-	margin-left: 1em;
-	text-decoration: none;
-	font-size: 12.5pt;
-	font-family: sans-serif;
-	text-align: center;
-	color: #BDBDBD;
-}
-
-a {text-decoration: none;}
-
-h5, h6 { margin: 0em; padding: 0em;}
-
-/*Generic lexBox structure stage's, experience's, portfolio*/
+/*Generic flexBox structure stage's, experience's, portfolio*/
 #flex-direction {
 	display: flex;
 	flex-direction: column;
@@ -348,6 +338,19 @@ li {
 	font-size: 10.5pt; 
 }
 
+/*Generic pictures size*/
+.hunimalis-image, .quasar-image, .contresens-image, 
+.cote-plage-image, .bmb-image, .isatis-image, 
+.bodega-image, .forum-image, .bureau-image { 
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border: outset 2px #b2796e;
+	height: 60px;
+	width: 350px;
+	margin-bottom: 1%;
+}
+
 	/*****************EXPERIENCE.html-END*************/
 /*****************STAGE.html-END******************/
 
@@ -509,7 +512,37 @@ h3 {
 /*****************COMPETENCES.html-END***********/
 
 /*****************IN_CONTACT.html***************/
+.phone, .mail, .drive-load, 
+.linked-in, .git-hub {
+	width: 1.3cm;
+	height: 1.3cm;
+}
 
+.contact-list {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.box-list {
+	background-color: #70708338;
+	border: 2.5px double #101012;
+	border-bottom: 2.5px double transparent;
+	box-shadow: 6px 6px 6px black;
+	border-image: linear-gradient(to bottom, #A4A4A4, 
+				  rgba(161, 9, 9, 0.514));
+	border-image-slice: 1;
+	text-align: center;
+	font-size: 10.5pt;
+	font-family: sans-serif;
+	color: #A4A4A4;
+	margin: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	height: 10em;
+	width: 20em;
+
+}
 
 /*****************CONTACT.html-END****************/
 /*****************IN_LOADER.html******************/
