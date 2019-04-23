@@ -38,27 +38,26 @@ h5, h6 { margin: 0em; padding: 0em;
 	display: flex; 
 	flex-direction: row;
 	justify-content: space-between;
-	width: 50em;
+	width: 45em;
 	height: 2.5em;
 	margin-top: 9.5em;
 	margin-left: 1em;
 }
 
 span {  
-	background-size: cover;
-	font-size: 12pt;
+	font-size: 12.5pt;
 	font-family: sans-serif;
 	color: #A4A4A4;
 	text-decoration: none;
-	width: 10em;
+	width: 20em;
 	margin-top: 0.6em;
-	padding-left: 1%;
-	padding-right: 2%
+	padding-left: 1%
 }
 
 /*Generic pictures*/
 .tel, .drive, 
-.gmail, .accueil { 
+.gmail, .accueil {
+	background-size: cover;
 	width: 2.50em;
 	height: 2.50em;
 	animation: change_width_back 0.5s forwards;
@@ -81,7 +80,8 @@ span {
 	opacity: 0.8;
 }
 
-a {text-decoration: none;
+a {
+	text-decoration: none;
 }
 
 .separate { 
@@ -297,7 +297,7 @@ footer  {
 
 /*****************IN_STAGE.html*******************/
 	/*****************IN_EXPERIENCE.html**************/
-.presentation-a, .presentation-b, .presentation-list {
+.presentation-a, .presentation-b, .generic-flex-2 {
 	background-color: #242323;  
 	border: 2.5px double #101012;
 	border-bottom: 2.5px double transparent;
@@ -318,7 +318,7 @@ footer  {
 	border-image-slice: 1;
 }
 
-.presentation-list {
+.generic-flex-2 {
 	border-image: linear-gradient(to right, #9C0202 ,#A4A4A4);
 	border-image-slice: 1;
 }
@@ -444,10 +444,9 @@ li {
 
 .css-image {
 	width: 3.9em;
-
 }
 
-.stars {
+.generic-box {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -466,7 +465,7 @@ li {
 	animation: change_width 0.5s forwards;
 }
 
-.competence {
+.generic-flex-in {
 	background-color: #70708338;
 	border: 2.5px double #101012;
 	border-bottom: 2.5px double transparent;
@@ -480,8 +479,9 @@ li {
 	margin: 2em;
 }
 
-h3 {	
-	margin-bottom: 0%; padding-bottom: 0%;
+h3, h4 {	
+	margin-bottom: 0%; 
+	padding-bottom: 0%;
 }
 
 .outils-list {
@@ -508,42 +508,41 @@ h3 {
 	margin-bottom: 1em;
 }
 
-
 /*****************COMPETENCES.html-END***********/
 
-/*****************IN_CONTACT.html***************/
+/*****************IN_CONTACT.html********generic-flex-in*******/
 .phone, .mail, .drive-load, 
 .linked-in, .git-hub {
-	width: 1.3cm;
-	height: 1.3cm;
+	background-color: #c4c4d663;
+	border: 3.5px double #101012;
+	border-bottom: 3.5px double transparent;
+	box-shadow: 6px 6px 6px black;
+	border-image: linear-gradient(to bottom, #181818 ,#A4A4A4);
+	border-image-slice: 1;
+	width: 3rem;
+	height: 3rem;
 }
 
-.contact-list {
+.li-phone, .li-mail, .li-cv {
+	padding: 0.5em;
+}
+.contact-link {
+	color: rgba(164, 164, 164, 0.616);
+	font-family: sans-serif;
+}
+
+.generic-flex-in {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
+	padding-bottom: 1em
 }
 
-.box-list {
-	background-color: #70708338;
-	border: 2.5px double #101012;
-	border-bottom: 2.5px double transparent;
-	box-shadow: 6px 6px 6px black;
-	border-image: linear-gradient(to bottom, #A4A4A4, 
-				  rgba(161, 9, 9, 0.514));
-	border-image-slice: 1;
-	text-align: center;
-	font-size: 10.5pt;
+h4 {
+	font-size: 1.2rem;
 	font-family: sans-serif;
-	color: #A4A4A4;
-	margin: auto;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	height: 10em;
-	width: 20em;
-
+	color: rgba(164, 164, 164, 0.616);
 }
-
 /*****************CONTACT.html-END****************/
 /*****************IN_LOADER.html******************/
 /*****************LOADER.html-END*****************/
