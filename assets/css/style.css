@@ -59,10 +59,10 @@ h5, h6 {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	width: 45em;
+	width: 43em;
 	height: 2.5em;
 	margin-top: 9.5em;
-	margin-left: 1em;
+	margin-left: 5em;
 }
 
 span {  
