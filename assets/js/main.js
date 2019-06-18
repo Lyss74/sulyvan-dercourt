@@ -28,7 +28,7 @@ async function hueRotateEffect(id){
 
 async function blurEffect(id) {
     var currentTag = document.getElementById(id)
-    for (let index = 50; index > -1; index--) {
+    for (let index = 10; index > -1; index--) {
         await sleep(15);
         currentTag.style["filter"] = "blur("+index+"px)";
     }
