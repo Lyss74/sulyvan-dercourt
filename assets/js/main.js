@@ -5,7 +5,7 @@ function sleep(ms) {
 async function grayscaleEffect(id){
     var currentTag = document.getElementById(id)
     for (let index = 100; index > -1; index--) {
-        await sleep(15);
+        await sleep(20);
         currentTag.style["filter"] = "grayscale("+index+"%)";
     }
 }
