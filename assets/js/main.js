@@ -5,11 +5,12 @@ function sleep(ms) {
 async function grayscaleEffect(id){
     var currentTag = document.getElementById(id)
     for (let index = 100; index > -1; index--) {
-        await sleep(25);
+        await sleep(15);
         currentTag.style["filter"] = "grayscale("+index+"%)";
     }
 }
 
+/*
 async function inverseEffect(id){
     var currentTag = document.getElementById(id)
     for (let index = 100; index > -1; index--) {
@@ -33,3 +34,4 @@ async function blurEffect(id) {
         currentTag.style["filter"] = "blur("+index+"px)";
     }
 }
+*/
