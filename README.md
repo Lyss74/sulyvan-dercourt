@@ -5,7 +5,7 @@
 
 « Curriculum vitae Réaliser entièrement de façon static, a permis de pratiquer les langages `HTML 5` et `CSS 3` ».
 
-* Sans l'utilisation de Frameworks et de librairie 
+* Sans l'utilisation de Framework et de librairie 
 * Utilisation des `flexBox`
 * Utilisation des `@KeyFrame`
 
